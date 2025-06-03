@@ -1,0 +1,167 @@
+.chat-bubble {
+  transition: all 0.3s ease;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.chat-bubble:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.chat-bubble a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.chat-bubble a:hover {
+  color: #1d4ed8;
+}
+
+.chat-bubble strong,
+.chat-bubble b {
+  font-weight: 600;
+}
+
+.chat-bubble p {
+  margin-bottom: 0.75rem;
+}
+
+.chat-bubble p:last-child {
+  margin-bottom: 0;
+}
+
+.chat-bubble ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.chat-bubble li {
+  margin-bottom: 0.5rem;
+}
+
+.chat-bubble li:last-child {
+  margin-bottom: 0;
+}
+
+.chat-bubble h1,
+.chat-bubble h2 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.markdown-content {
+  width: 100%;
+}
+
+.markdown-content p {
+  margin-bottom: 0.75rem;
+}
+
+.markdown-content p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-content a {
+  color: #2563eb;
+  text-decoration: underline;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.markdown-content a:hover {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.markdown-content a svg {
+  opacity: 0.75;
+  transition: transform 0.2s ease;
+}
+
+.markdown-content a:hover svg {
+  transform: translate(1px, -1px);
+  opacity: 1;
+}
+
+/* Style for property listings */
+.markdown-content strong {
+  color: #374151;
+  font-weight: 600;
+}
+
+/* Add some spacing between property listings */
+.markdown-content li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.markdown-content li:before {
+  content: "•";
+  position: absolute;
+  left: 0.5rem;
+  color: #6b7280;
+}
+
+/* Style for property details */
+.markdown-content li strong {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+/* Add styles for user messages */
+.chat-bubble.bg-primary {
+  background-color: #2563eb;
+}
+
+/* Add styles for bot messages */
+.chat-bubble.bg-gray-100 {
+  background-color: #f3f4f6;
+}
+
+/* Add styles for links in user messages */
+.chat-bubble.bg-primary a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.chat-bubble.bg-primary a:hover {
+  color: #e5e7eb;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Improve link spacing in paragraphs */
+.markdown-content p a {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Add a subtle transition for the external link icon */
+.markdown-content a svg {
+  transition: transform 0.2s ease;
+}
+
+.markdown-content a:hover svg {
+  transform: translate(1px, -1px);
+}
+
+/* Add styles for multiple links in a row */
+.markdown-content p a + a {
+  margin-left: 0.5rem;
+}
+
+/* Make links more visible in dark mode if needed */
+@media (prefers-color-scheme: dark) {
+  .markdown-content a {
+    color: #60a5fa;
+  }
+  
+  .markdown-content a:hover {
+    color: #93c5fd;
+    background-color: rgba(96, 165, 250, 0.1);
+  }
+} 
