@@ -2,7 +2,7 @@
 
 A sophisticated multi-agent system designed for property inquiries and analysis, leveraging LLMs, RAG (Retrieval Augmented Generation), and dynamic web search capabilities.
 
-## 🌟 Features
+##  Features
 
 - **Intelligent Query Understanding**: Automatically classifies and extracts key information from natural language property inquiries
 - **Multi-Agent Architecture**: Specialized agents for validation, data retrieval, web search, and response generation
@@ -11,7 +11,7 @@ A sophisticated multi-agent system designed for property inquiries and analysis,
 - **Conversation Memory**: Maintains context across multiple user interactions
 - **Property Recommendations**: Provides tailored property suggestions based on user preferences
 
-## 🏗️ Architecture
+##  Architecture
 
 The system is built on a multi-agent architecture using LangGraph for workflow orchestration:
 
@@ -37,21 +37,21 @@ User Query → Query Classification → Validation → Property Search →
    - Data collection tools for property listings
    - Data cleaning and processing utilities
 
-## 🤖 Agents
+##  Agents
 
 - **ValidationAgent**: Extracts and validates information from user queries
 - **DataSourceAgent**: Handles RAG-based property searches using vector embeddings
 - **WebSearchAgent**: Performs dynamic web searches for additional property information
 - **ResponseAgent**: Generates natural language responses using all gathered information
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Backend**: Python, FastAPI, LangChain, LangGraph, FAISS, OpenAI
 - **Frontend**: TypeScript, React, Tailwind CSS
 - **Data**: Vector embeddings, JSON, XLSX
 - **DevOps**: Docker (planned)
 
-## 📋 Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 
@@ -104,20 +104,20 @@ User Query → Query Classification → Validation → Property Search →
    npm run dev
    ```
 
-## 🚀 Usage
+##  Usage
 
 1. Access the frontend application at `http://localhost:8080`
 2. Enter property inquiries in natural language
 3. The system will process your query through multiple agents and return relevant property information
 
-## 📊 Example Queries
+##  Example Queries
 
 - "Show me condos in Bangsar South under RM 800,000"
 - "What amenities does River Park have?"
 - "Are there any properties near KLCC with 3 bedrooms under RM 1.5 million?"
 - "Tell me more about the neighborhood around Mont Kiara"
 
-## 🔄 Workflow
+##  Workflow
 
 1. **Initial Property Query**
    ```
@@ -132,18 +132,3 @@ User Query → Query Classification → Validation → Property Search →
    [Context Lookup] → Specific Property Check →
    [If needed] Web Research → Validation → Response
    ```
-
-## 🧠 Future Improvements
-
-- SalesAgent for inquiry routing
-- Comprehensive test suite
-- Error logging
-- API authentication
-- Docker containerization
-- CI/CD pipeline setup
-- Caching mechanism
-- API monitoring and rate limiting
-
-## 📝 License
-
-[MIT License](LICENSE) 
